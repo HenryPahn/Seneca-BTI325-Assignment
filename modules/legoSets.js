@@ -25,7 +25,7 @@ const getSetByNum = (setNum) => {
         const res = sets.find(set => set.set_num == setNum);
 
         if (res == null || res === 'undefined') {
-            reject("unable to find a request set");
+            reject("Unable to find a request set");
         }
         else
             resolve(res);
@@ -37,7 +37,7 @@ const getSetsByTheme = (theme) => {
         const res = sets.filter(set => set.theme.toUpperCase().includes(theme.toUpperCase()));
 
         if (res.length === 0) 
-            reject("unable to find a request sets");
+            reject("Unable to find a request sets");
         else
             resolve(res);
     })

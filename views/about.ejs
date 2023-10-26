@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <%- include('partials/navbar', {page: '/about'}) %>
+
+    <div class="container mx-auto">
+        <div class="hero rounded-lg bg-base-200 p-6">
+            <div class="hero-content text-center">
+                <div class="max-w-md">
+                    <h1 class="text-5xl font-bold">About</h1>
+                    <p>All about me - a cat lover</p>
+                </div>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-5">
+            <div class="rounded-md flex items-center justify-center ">
+                <img class="w-full rounded-lg" src="/images/cats.JPG" alt="cats.JPG">
+            </div>
+            <div class="rounded-md flex items-center justify-center ">
+                Hi, I am Hoang Phan. My student number is 101662229 in BSD. I am a cat lover. I usually play badminton at Seneca College.
+            </div>
+        </div>
+    </div>
+    
+
+    
+</body>
+</html>

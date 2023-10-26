@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collection</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <%- include('partials/navbar',  {page: '/lego/sets'}) %>
+
+    <div class="container mx-auto p-4">
+        <div class="hero bg-base-200 rounded-lg p-6">
+            <div class="hero-content text-center ">
+                <div class="max-w-md">
+                    <h1 class="text-5xl font-bold">Collection</h1>
+                    <p class="py-6">
+                        Browse the entire collection.  Click the theme to filter by themes such as: 
+                        <a href="/lego/sets?theme=Playhouse" class="btn btn-primary btn-xs">Playhouse</a> 
+                        <a href="/lego/sets?theme=Town" class="btn btn-primary btn-xs">Town</a>  
+                        <a href="/lego/sets?theme=Supplemental" class="btn btn-primary btn-xs">Supplemental</a> 
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <table class="table table-zebra">
+            <% for(var i=0; i < set.length; i++) { %>
+               <tr>
+                    <td><img src="<%= set[i].img_url %>" alt="Set image" class="avatar w-32 h-32 rounded-lg"></td>
+                    <td><%= set[i].name %> | <a href="/lego/sets?theme=<%= set[i].theme %>" class="btn  mt-2 btn-xs"><%= set[i].theme %></a> </td> 
+                    <td>
+                        <span class="font-bold">Year: </span>
+                        <%= set[i].theme %>
+                        <span class="font-bold">Parts: </span>
+                        <%= set[i].num_parts %>
+                    </td>
+                    <td><a href="/lego/sets/<%= set[i].set_num %>" class="btn  mt-2 btn-xs">DETAILS</a></td>
+               </tr>
+            <% } %>
+        </table>
+    </div>
+</body>
+</html>
