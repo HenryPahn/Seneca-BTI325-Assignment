@@ -29,10 +29,10 @@
             <% for(var i=0; i < set.length; i++) { %>
                <tr>
                     <td><img src="<%= set[i].img_url %>" alt="Set image" class="avatar w-32 h-32 rounded-lg"></td>
-                    <td><%= set[i].name %> | <a href="/lego/sets?theme=<%= set[i].theme %>" class="btn  mt-2 btn-xs"><%= set[i].theme %></a> </td> 
+                    <td><%= set[i].name %> | <a href="/lego/sets?theme=<%= set[i].theme %>" class="btn  mt-2 btn-xs"><%= set[i].Theme.name %></a> </td> 
                     <td>
                         <span class="font-bold">Year: </span>
-                        <%= set[i].theme %>
+                        <%= set[i].year %>
                         <span class="font-bold">Parts: </span>
                         <%= set[i].num_parts %>
                     </td>
