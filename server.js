@@ -101,7 +101,7 @@ app.post('/lego/editSet', async(req, res) => {
 
 app.get('/lego/deleteSet/:set_num', async(req, res) => {
     try {
-        const set_num = req.params; 
+        let set_num = req.params; 
         await legoData.deleteSet(set_num);
         res.redirect('/lego/sets');
     } catch(err) {

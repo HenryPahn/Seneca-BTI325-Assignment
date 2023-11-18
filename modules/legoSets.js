@@ -139,8 +139,8 @@ const deleteSet = (setNum) => {
     return new Promise(async(resolve, reject) => {
         try {
             await Set.destroy({
-                where: { set_num: setNum }
-            }); 
+                where: { set_num: setNum }, 
+            })
             resolve();
         } catch(err) {
             reject(err.errors[0].message);
