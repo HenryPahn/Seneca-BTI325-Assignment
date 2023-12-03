@@ -145,6 +145,8 @@ const deleteSet = (setNum) => {
         } catch(err) {
             reject(err.errors[0].message);
         }
+        
+
     })
 }
 

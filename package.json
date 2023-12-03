@@ -5,17 +5,22 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "tw:build": "tailwindcss build -i ./public/css/tailwind.css -o ./public/css/main.css"
+    "tw:build": "tailwindcss build -i ./public/css/tailwind.css -o ./public/css/main.css",
+    "dev": "env-cmd node --watch index.js"
   },
   "keywords": [],
   "author": "Hoang Phan",
   "license": "ISC",
   "dependencies": {
     "@tailwindcss/typography": "^0.5.10",
+    "bcryptjs": "^2.4.3",
+    "client-sessions": "^0.8.0",
     "daisyui": "^3.9.2",
     "dotenv": "^16.3.1",
     "ejs": "^3.1.9",
     "express": "^4.18.2",
+    "mongodb": "^6.3.0",
+    "mongoose": "^8.0.2",
     "nodemon": "^3.0.1",
     "path": "^0.12.7",
     "pg": "^8.11.3",
