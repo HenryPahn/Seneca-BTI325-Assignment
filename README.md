@@ -1,5 +1,8 @@
 # BTI325 Assignment
 
+## Link to the app
+https://strange-elk-sun-hat.cyclic.app/
+
 ## Description 
 <p>This is an assignment from a web course in Seneca college. This is the final product of that course. I was taught to how to create a basic web app project by using Express and Node JS. Moreover, <b>tailwind framework</b> and  <b>mongoDB</b> were also applied.</p>
 
